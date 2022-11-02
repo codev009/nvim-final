@@ -41,4 +41,5 @@ packer.startup(function(use)
   use 'dinhhuy258/git.nvim' -- For git blame & browse
   use 'p00f/nvim-ts-rainbow' -- rainbow colors
   use 'lukas-reineke/indent-blankline.nvim'
+  use 'turbio/bracey.vim' -- for the live browser preview
 end)

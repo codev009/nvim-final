@@ -89,10 +89,25 @@ _G.packer_plugins = {
     path = "/home/lipin/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
+  ["git.nvim"] = {
+    loaded = true,
+    path = "/home/lipin/.local/share/nvim/site/pack/packer/start/git.nvim",
+    url = "https://github.com/dinhhuy258/git.nvim"
+  },
+  ["gitsigns.nvim"] = {
+    loaded = true,
+    path = "/home/lipin/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
+    url = "https://github.com/lewis6991/gitsigns.nvim"
+  },
   ["gruvbox.nvim"] = {
     loaded = true,
     path = "/home/lipin/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
     url = "https://github.com/ellisonleao/gruvbox.nvim"
+  },
+  ["indent-blankline.nvim"] = {
+    loaded = true,
+    path = "/home/lipin/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
+    url = "https://github.com/lukas-reineke/indent-blankline.nvim"
   },
   ["lspkind-nvim"] = {
     loaded = true,
@@ -159,10 +174,10 @@ _G.packer_plugins = {
     path = "/home/lipin/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
-  ["nvim-ts-autotag"] = {
+  ["nvim-ts-rainbow"] = {
     loaded = true,
-    path = "/home/lipin/.local/share/nvim/site/pack/packer/start/nvim-ts-autotag",
-    url = "https://github.com/windwp/nvim-ts-autotag"
+    path = "/home/lipin/.local/share/nvim/site/pack/packer/start/nvim-ts-rainbow",
+    url = "https://github.com/p00f/nvim-ts-rainbow"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
