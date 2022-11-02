@@ -7,6 +7,8 @@ local function telescope_buffer_dir()
   return vim.fn.expand('%:p:h')
 end
 
+local fb_actions = require "telescope".extensions.file_browser.actions
+
 telescope.setup {
   defaults = {
     mappings = {
@@ -27,6 +29,8 @@ telescope.setup {
         },
         ["n"] = {
           -- your custom normal mode mappings
+          ["N"] = fb_actions.create,
+          ["h"] = fb_actions.goto_parent_dir,
           ["/"] = function()
             vim.cmd('startinsert')
           end
@@ -36,6 +40,7 @@ telescope.setup {
   },
 }
 
+telescope.load_extension("file_browser")
 
 vim.keymap.set('n', ';f',
   function()
@@ -71,3 +76,4 @@ vim.keymap.set("n", "sf", function()
     layout_config = { height = 40 }
   })
 end)
+
