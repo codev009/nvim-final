@@ -3,6 +3,9 @@
 local status, nvim_lsp = pcall(require, "lspconfig")
 if (not status) then return end
 
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities.textDocument.completion.completionItem.snippetSupport = true
+
 local protocol = require('vim.lsp.protocol')
 
 local augroup_format = vim.api.nvim_create_augroup("Format", { clear = true })
@@ -74,7 +77,7 @@ nvim_lsp.flow.setup {
 
 nvim_lsp.tsserver.setup {
   on_attach = on_attach,
-  filetypes = { "typescript", "typescriptreact", "typescript.tsx" },
+  filetypes = { "typescript", "typescriptreact", "typescript.tsx", "jsx" },
   cmd = { "typescript-language-server", "--stdio" },
   capabilities = capabilities
 }
@@ -113,7 +116,16 @@ nvim_lsp.tailwindcss.setup {
 
 nvim_lsp.emmet_ls.setup {
   on_attach = on_attach,
-  capabilities = capabilities
+  capabilities = capabilities,
+  filetypes = { 'html', 'typescriptreact', 'javascriptreact', 'css', 'sass', 'scss', 'less', 'javascript'},
+    init_options = {
+      html = {
+        options = {
+          -- For possible options, see: https://github.com/emmetio/emmet/blob/master/src/config.ts#L79-L267
+          ["bem.enabled"] = true,
+        },
+      },
+    } 
 }
 
 nvim_lsp.cssls.setup {

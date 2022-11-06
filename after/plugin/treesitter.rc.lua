@@ -21,7 +21,13 @@ ts.setup {
     "css",
     "html",
     "lua",
-    "javascript"
+    "javascript",
+    "python",
+    "ruby",
+    "rust",
+    "svelte",
+    "vue",
+    "typescript"
   },
   autotag = {
     enable = true,
