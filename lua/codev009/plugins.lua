@@ -42,4 +42,12 @@ packer.startup(function(use)
   use 'p00f/nvim-ts-rainbow' -- rainbow colors
   use 'lukas-reineke/indent-blankline.nvim'
   use 'turbio/bracey.vim' -- for the live browser preview
+  use {
+    "nvim-neo-tree/neo-tree.nvim",
+    branch = "v2.x",
+    requires = {
+      "nvim-lua/plenary.nvim",
+      "MunifTanjim/nui.nvim",
+    }
+  }
 end)

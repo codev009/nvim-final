@@ -79,6 +79,11 @@ _G.packer_plugins = {
     path = "/home/lipin/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["bracey.vim"] = {
+    loaded = true,
+    path = "/home/lipin/.local/share/nvim/site/pack/packer/start/bracey.vim",
+    url = "https://github.com/turbio/bracey.vim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/home/lipin/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -139,6 +144,16 @@ _G.packer_plugins = {
     path = "/home/lipin/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
+  ["neo-tree.nvim"] = {
+    loaded = true,
+    path = "/home/lipin/.local/share/nvim/site/pack/packer/start/neo-tree.nvim",
+    url = "https://github.com/nvim-neo-tree/neo-tree.nvim"
+  },
+  ["nui.nvim"] = {
+    loaded = true,
+    path = "/home/lipin/.local/share/nvim/site/pack/packer/start/nui.nvim",
+    url = "https://github.com/MunifTanjim/nui.nvim"
+  },
   ["null-ls.nvim"] = {
     loaded = true,
     path = "/home/lipin/.local/share/nvim/site/pack/packer/start/null-ls.nvim",
@@ -173,6 +188,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/lipin/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
+  ["nvim-ts-autotag"] = {
+    loaded = true,
+    path = "/home/lipin/.local/share/nvim/site/pack/packer/start/nvim-ts-autotag",
+    url = "https://github.com/windwp/nvim-ts-autotag"
   },
   ["nvim-ts-rainbow"] = {
     loaded = true,
