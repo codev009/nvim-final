@@ -50,4 +50,5 @@ packer.startup(function(use)
       "MunifTanjim/nui.nvim",
     }
   }
+  use 'github/copilot.vim'
 end)
