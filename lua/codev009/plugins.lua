@@ -51,4 +51,5 @@ packer.startup(function(use)
     }
   }
   use 'github/copilot.vim'
+  use 'tpope/vim-commentary'
 end)
