@@ -50,6 +50,6 @@ packer.startup(function(use)
       "MunifTanjim/nui.nvim",
     }
   }
-  use 'github/copilot.vim'
   use 'tpope/vim-commentary'
+  use 'Exafunction/codeium.vim'
 end)
