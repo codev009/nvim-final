@@ -117,7 +117,7 @@ nvim_lsp.tailwindcss.setup {
 nvim_lsp.emmet_ls.setup {
   on_attach = on_attach,
   capabilities = capabilities,
-  filetypes = { 'html', 'typescriptreact', 'javascriptreact', 'css', 'sass', 'scss', 'less', 'javascript' },
+  filetypes = { 'html', 'typescriptreact', 'javascriptreact', 'css', 'sass', 'scss', 'less', 'javascript', 'eruby' },
   init_options = {
     html = {
       options = {
