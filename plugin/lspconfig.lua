@@ -103,7 +103,7 @@ nvim_lsp.lua_ls.setup {
         -- Make the server aware of Neovim runtime files
         library = vim.api.nvim_get_runtime_file("", true),
         checkThirdParty = false
-      },
+      }
     },
   },
 }
@@ -117,7 +117,7 @@ nvim_lsp.tailwindcss.setup {
 nvim_lsp.emmet_ls.setup {
   on_attach = on_attach,
   capabilities = capabilities,
-  filetypes = { 'html', 'typescriptreact', 'javascriptreact', 'css', 'sass', 'scss', 'less', 'javascript', 'eruby' },
+  filetypes = { 'html', 'typescriptreact', 'javascriptreact', 'css', 'sass', 'scss', 'less', 'javascript', 'eruby', 'go' },
   init_options = {
     html = {
       options = {
