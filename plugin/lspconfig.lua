@@ -117,7 +117,7 @@ nvim_lsp.tailwindcss.setup {
 nvim_lsp.emmet_ls.setup {
   on_attach = on_attach,
   capabilities = capabilities,
-  filetypes = { 'html', 'typescriptreact', 'javascriptreact', 'css', 'sass', 'scss', 'less', 'javascript', 'eruby', 'go' },
+  filetypes = { 'html', 'typescriptreact', 'javascriptreact', 'css', 'sass', 'scss', 'less', 'javascript', 'eruby' },
   init_options = {
     html = {
       options = {
@@ -126,6 +126,11 @@ nvim_lsp.emmet_ls.setup {
       },
     },
   }
+}
+
+nvim_lsp.gopls.setup {
+  on_attach = on_attach,
+  capabilities = capabilities
 }
 
 nvim_lsp.solargraph.setup {
