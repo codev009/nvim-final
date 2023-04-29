@@ -51,5 +51,4 @@ packer.startup(function(use)
     }
   }
   use 'tpope/vim-commentary'
-  use 'Exafunction/codeium.vim'
 end)
