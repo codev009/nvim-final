@@ -228,6 +228,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/lipin/.local/share/nvim/site/pack/packer/start/vim-commentary",
     url = "https://github.com/tpope/vim-commentary"
+  },
+  ["vim-eunuch"] = {
+    loaded = true,
+    path = "/home/lipin/.local/share/nvim/site/pack/packer/start/vim-eunuch",
+    url = "https://github.com/tpope/vim-eunuch"
   }
 }
 
