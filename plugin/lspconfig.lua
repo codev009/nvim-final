@@ -107,7 +107,8 @@ nvim_lsp.tailwindcss.setup {
 nvim_lsp.emmet_ls.setup {
   on_attach = on_attach,
   capabilities = capabilities,
-  filetypes = { 'html', 'typescriptreact', 'javascriptreact', 'css', 'sass', 'scss', 'less', 'javascript', 'eruby' },
+  filetypes = { 'html', 'typescriptreact', 'javascriptreact', 'css', 'sass', 'scss', 'less', 'javascript', 'eruby',
+    'svelte' },
   init_options = {
     html = {
       options = {
@@ -131,6 +132,12 @@ nvim_lsp.solargraph.setup {
 nvim_lsp.cssls.setup {
   on_attach = on_attach,
   capabilities = capabilities
+}
+
+nvim_lsp.svelte.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  filetype = { 'svelte' }
 }
 
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
