@@ -38,9 +38,9 @@ packer.startup(function(use)
   })
   use 'akinsho/nvim-bufferline.lua'
   use 'lewis6991/gitsigns.nvim'
-  use 'dinhhuy258/git.nvim'  -- For git blame & browse
-  use 'p00f/nvim-ts-rainbow' -- rainbow colors
   use 'lukas-reineke/indent-blankline.nvim'
+  use 'dinhhuy258/git.nvim'
+  use 'p00f/nvim-ts-rainbow' -- rainbow colors
   use 'turbio/bracey.vim'    -- for the live browser preview
   use {
     "nvim-neo-tree/neo-tree.nvim",
