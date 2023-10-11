@@ -7,6 +7,8 @@ vim.opt.fileencoding = 'utf-8'
 vim.wo.number = true
 vim.opt.relativenumber = true
 
+vim.opt.mouse = 'a'
+
 vim.opt.hidden = true
 vim.opt.title = true
 vim.opt.autoindent = true
@@ -18,7 +20,7 @@ vim.opt.showcmd = true
 vim.opt.cmdheight = 1
 vim.opt.laststatus = 2
 vim.opt.expandtab = true
-vim.opt.scrolloff = 10
+vim.opt.scrolloff = 8
 vim.opt.shell = 'bash'
 vim.opt.backupskip = { '/tmp/*', '/private/tmp/*' }
 vim.opt.inccommand = 'split'
