@@ -21,7 +21,7 @@ vim.opt.cmdheight = 1
 vim.opt.laststatus = 2
 vim.opt.expandtab = true
 vim.opt.scrolloff = 8
-vim.opt.sidescrollof = 8
+vim.opt.sidescrolloff = 8
 vim.opt.shell = 'bash'
 vim.opt.backupskip = { '/tmp/*', '/private/tmp/*' }
 vim.opt.inccommand = 'split'
@@ -41,8 +41,8 @@ vim.cmd([[let &t_Ce = "\e[4:0m"]])
 
 -- Turn off paste mode when leaving insert
 vim.api.nvim_create_autocmd("InsertLeave", {
-  pattern = '*',
-  command = "set nopaste"
+        pattern = '*',
+        command = "set nopaste"
 })
 
 -- Add asterisks in block comments
