@@ -9,3 +9,6 @@ keymap.set('n', '<leader>d', ":bd! <CR>")
 
 -- delete all buffers
 keymap.set('n', '<leader>D', ":%bd! <CR>")
+
+-- reload config
+keymap.set('n', '<leader>r', ':source ~/.config/nvim/init.lua<CR>')
