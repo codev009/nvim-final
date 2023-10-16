@@ -149,15 +149,15 @@ _G.packer_plugins = {
     path = "/home/lipin/.local/share/nvim/site/pack/packer/start/neo-tree.nvim",
     url = "https://github.com/nvim-neo-tree/neo-tree.nvim"
   },
+  ["none-ls.nvim"] = {
+    loaded = true,
+    path = "/home/lipin/.local/share/nvim/site/pack/packer/start/none-ls.nvim",
+    url = "https://github.com/nvimtools/none-ls.nvim"
+  },
   ["nui.nvim"] = {
     loaded = true,
     path = "/home/lipin/.local/share/nvim/site/pack/packer/start/nui.nvim",
     url = "https://github.com/MunifTanjim/nui.nvim"
-  },
-  ["null-ls.nvim"] = {
-    loaded = true,
-    path = "/home/lipin/.local/share/nvim/site/pack/packer/start/null-ls.nvim",
-    url = "https://github.com/jose-elias-alvarez/null-ls.nvim"
   },
   ["nvim-autopairs"] = {
     loaded = true,
