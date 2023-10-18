@@ -40,8 +40,7 @@ packer.startup(function(use)
   use 'lewis6991/gitsigns.nvim'
   use 'lukas-reineke/indent-blankline.nvim'
   use 'dinhhuy258/git.nvim'
-  use 'p00f/nvim-ts-rainbow' -- rainbow colors
-  use 'turbio/bracey.vim'    -- for the live browser preview
+  use 'turbio/bracey.vim' -- for the live browser preview
   use {
     "nvim-neo-tree/neo-tree.nvim",
     branch = "v2.x",
