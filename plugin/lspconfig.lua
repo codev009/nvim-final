@@ -1,6 +1,7 @@
 --vim.lsp.set_log_level("debug")
 
 local status, nvim_lsp = pcall(require, "lspconfig")
+local util = require "lspconfig/util"
 if (not status) then return end
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()
@@ -121,7 +122,19 @@ nvim_lsp.emmet_ls.setup {
 
 nvim_lsp.gopls.setup {
   on_attach = on_attach,
-  capabilities = capabilities
+  capabilities = capabilities,
+  cmd = { "gopls" },
+  filetypes = { "go", "gomod", "gowork", "gotmpl" },
+  root_dir = util.root_pattern("go.work", "go.mod", ".git"),
+  settings = {
+    gopls = {
+      completeUnimported = true,
+      usePlaceholders = true,
+      analyses = {
+        unusedparams = true,
+      },
+    },
+  },
 }
 
 nvim_lsp.solargraph.setup {
