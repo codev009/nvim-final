@@ -150,7 +150,15 @@ nvim_lsp.cssls.setup {
 nvim_lsp.svelte.setup {
   on_attach = on_attach,
   capabilities = capabilities,
-  filetype = { 'svelte' }
+  filetypes = { 'svelte' }
+}
+
+nvim_lsp.csharp_ls.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  cmd = { "csharp_ls" },
+  filetypes = { 'cs', 'sln' },
+  root_dir = util.root_pattern("*.sln", ".git", ".cs")
 }
 
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
