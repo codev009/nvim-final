@@ -23,6 +23,7 @@ null_ls.setup {
     null_ls.builtins.formatting.gofumpt,
     null_ls.builtins.formatting.goimports_reviser,
     null_ls.builtins.formatting.golines,
+    null_ls.builtins.formatting.rubyfmt,
   },
   on_attach = function(client, bufnr)
     if client.supports_method("textDocument/formatting") then
