@@ -145,6 +145,7 @@ nvim_lsp.solargraph.setup {
 nvim_lsp.cssls.setup {
   on_attach = on_attach,
   capabilities = capabilities,
+  filetypes = { "css", "scss", "less" },
   init_options = {
     provideFormatter = true
   },
