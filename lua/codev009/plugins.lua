@@ -53,4 +53,5 @@ packer.startup(function(use)
   }
   use 'tpope/vim-commentary'
   use 'tpope/vim-eunuch'
+  use 'nvimtools/none-ls-extras.nvim'
 end)

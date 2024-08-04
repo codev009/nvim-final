@@ -17,9 +17,7 @@ null_ls.setup {
     null_ls.builtins.formatting.prettierd.with {
       filetypes = { "html", "json", "svelte", "markdown", "css", "javascript", "javascriptreact", "scss" }
     },
-    null_ls.builtins.diagnostics.eslint_d.with({
-      diagnostics_format = '[eslint] #{m}\n(#{c})'
-    }),
+    require("none-ls.diagnostics.eslint_d"),
     null_ls.builtins.formatting.gofumpt,
     null_ls.builtins.formatting.goimports_reviser,
     null_ls.builtins.formatting.golines,
