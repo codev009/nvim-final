@@ -139,7 +139,11 @@ nvim_lsp.gopls.setup {
 
 nvim_lsp.solargraph.setup {
   on_attach = on_attach,
-  capabilities = capabilities
+  capabilities = capabilities,
+  filetypes = { 'ruby' },
+  init_options = {
+    provideFormatter = true
+  }
 }
 
 nvim_lsp.cssls.setup {
@@ -175,6 +179,12 @@ nvim_lsp.csharp_ls.setup {
   cmd = { "csharp_ls" },
   filetypes = { 'cs', 'sln' },
   root_dir = util.root_pattern("*.sln", ".git", ".cs")
+}
+
+nvim_lsp.pyright.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  filetypes = { "python" }
 }
 
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
