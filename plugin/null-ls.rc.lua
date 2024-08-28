@@ -15,7 +15,7 @@ end
 null_ls.setup {
   sources = {
     null_ls.builtins.formatting.prettierd.with {
-      filetypes = { "html", "json", "svelte", "markdown", "css", "javascript", "javascriptreact", "scss" }
+      filetypes = { "html", "json", "svelte", "markdown", "css", "javascript", "javascriptreact", "scss", "typescriptreact" }
     },
     require("none-ls.diagnostics.eslint_d"),
     null_ls.builtins.formatting.gofumpt,
