@@ -17,7 +17,7 @@ packer.startup(function(use)
   use 'hrsh7th/cmp-nvim-lsp'      -- nvim-cmp source for neovim's built-in LSP
   use 'hrsh7th/nvim-cmp'          -- Completion
   use 'neovim/nvim-lspconfig'     -- LSP
-  use 'nvimtools/none-ls.nvim'    -- Use Neovim as a language server to inject LSP diagnostics, code actions, and more via Lua
+  use 'nvimtools/none-ls.nvim'
   use 'glepnir/lspsaga.nvim'
   use 'L3MON4D3/LuaSnip'
   use {
