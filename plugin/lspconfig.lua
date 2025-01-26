@@ -73,7 +73,8 @@ local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
 nvim_lsp.ts_ls.setup {
   on_attach = on_attach,
-  filetypes = { "typescript", "typescriptreact", "typescript.tsx", "javascript", "javascriptreact" },
+  init_options = { hostInfo = 'neovim' },
+  filetypes = { "typescript", "typescriptreact", "typescript.tsx", "javascript", "javascriptreact", "javascript.jsx" },
   cmd = { "typescript-language-server", "--stdio" },
   capabilities = capabilities
 }
