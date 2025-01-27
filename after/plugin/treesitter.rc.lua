@@ -10,6 +10,7 @@ ts.setup {
     enable = true,
     disable = {},
   },
+  sync_install = false,
   ensure_installed = {
     "tsx",
     "toml",
