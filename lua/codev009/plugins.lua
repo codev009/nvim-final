@@ -11,7 +11,6 @@ packer.startup(function(use)
   use 'wbthomason/packer.nvim'
   use 'ellisonleao/gruvbox.nvim'
   use 'nvim-lualine/lualine.nvim' -- Statusline
-  use 'nvim-lua/plenary.nvim'     -- Common utilities
   use 'onsails/lspkind-nvim'      -- vscode-like pictograms
   use 'hrsh7th/cmp-buffer'        -- nvim-cmp source for buffer words
   use 'hrsh7th/cmp-nvim-lsp'      -- nvim-cmp source for neovim's built-in LSP
@@ -21,6 +20,7 @@ packer.startup(function(use)
     'nvimtools/none-ls.nvim',
     requires = {
       use 'nvimtools/none-ls-extras.nvim',
+      use 'nvim-lua/plenary.nvim',
     }
   }
   use 'glepnir/lspsaga.nvim'
