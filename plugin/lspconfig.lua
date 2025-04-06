@@ -76,7 +76,8 @@ nvim_lsp.ts_ls.setup {
   init_options = { hostInfo = 'neovim' },
   filetypes = { "typescript", "typescriptreact", "typescript.tsx", "javascript", "javascriptreact", "javascript.jsx" },
   cmd = { "typescript-language-server", "--stdio" },
-  capabilities = capabilities
+  capabilities = capabilities,
+  single_file_support = true
 }
 
 nvim_lsp.lua_ls.setup {
