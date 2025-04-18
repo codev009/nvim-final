@@ -23,7 +23,10 @@ packer.startup(function(use)
     }
   }
   use 'glepnir/lspsaga.nvim'
-  use 'L3MON4D3/LuaSnip'
+  use {
+    "L3MON4D3/LuaSnip",
+    requires = { "rafamadriz/friendly-snippets" },
+  }
   use {
     'nvim-treesitter/nvim-treesitter',
     run = function()
