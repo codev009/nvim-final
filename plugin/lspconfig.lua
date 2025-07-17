@@ -139,15 +139,6 @@ nvim_lsp.gopls.setup {
   },
 }
 
-nvim_lsp.solargraph.setup {
-  on_attach = on_attach,
-  capabilities = capabilities,
-  filetypes = { 'ruby' },
-  init_options = {
-    provideFormatter = true
-  }
-}
-
 nvim_lsp.cssls.setup {
   on_attach = on_attach,
   capabilities = capabilities,
