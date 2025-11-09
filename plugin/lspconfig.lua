@@ -74,7 +74,7 @@ local capabilities = require('cmp_nvim_lsp').default_capabilities()
 nvim_lsp.ts_ls.setup {
   on_attach = on_attach,
   init_options = { hostInfo = 'neovim' },
-  filetypes = { "typescript", "typescriptreact", "typescript.tsx", "javascript", "javascriptreact", "javascript.jsx" },
+  filetypes = { "typescript", "typescriptreact", "typescript.tsx", "javascript", "javascriptreact", "javascript.jsx", "vue" },
   cmd = { "typescript-language-server", "--stdio" },
   capabilities = capabilities,
   single_file_support = true
@@ -104,14 +104,14 @@ nvim_lsp.lua_ls.setup {
 nvim_lsp.tailwindcss.setup {
   on_attach = on_attach,
   capabilities = capabilities,
-  filetypes = { 'html', 'typescript', 'typescriptreact', 'javascriptreact', 'javascript', 'eruby' }
+  filetypes = { 'html', 'typescript', 'typescriptreact', 'javascriptreact', 'javascript', 'eruby', 'vue' }
 }
 
 nvim_lsp.emmet_ls.setup {
   on_attach = on_attach,
   capabilities = capabilities,
   filetypes = { 'html', 'typescriptreact', 'javascriptreact', 'css', 'sass', 'scss', 'less', 'javascript', 'eruby',
-    'svelte' },
+    'svelte', 'vue' },
   init_options = {
     html = {
       options = {
@@ -164,6 +164,15 @@ nvim_lsp.svelte.setup {
   on_attach = on_attach,
   capabilities = capabilities,
   filetypes = { 'svelte' }
+}
+
+nvim_lsp.volar.setup {
+  filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue" },
+  init_options = {
+    vue = {
+      hybridMode = false, -- Recommended for better integration with ts_ls
+    },
+  },
 }
 
 nvim_lsp.csharp_ls.setup {
