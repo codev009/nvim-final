@@ -15,12 +15,12 @@ end
 null_ls.setup {
   sources = {
     null_ls.builtins.formatting.prettierd.with {
-      filetypes = { "html", "json", "svelte", "markdown", "css", "javascript", "javascriptreact", "scss", "typescriptreact", "typescript", "vue" }
+      filetypes = { "html", "json", "svelte", "markdown", "css", "javascript", "javascriptreact", "scss", "typescriptreact", "typescript", "vue", "go" }
     },
     require("none-ls.diagnostics.eslint_d"),
-    -- null_ls.builtins.formatting.gofumpt,
-    -- null_ls.builtins.formatting.goimports_reviser,
-    -- null_ls.builtins.formatting.golines,
+    null_ls.builtins.formatting.gofumpt,
+    null_ls.builtins.formatting.goimports_reviser,
+    null_ls.builtins.formatting.golines,
     null_ls.builtins.formatting.rubyfmt,
     null_ls.builtins.formatting.rustywind,
   },
